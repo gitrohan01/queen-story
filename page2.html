@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2 — The Hidden Letter</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/hidden_letter_night.png') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .content-box {
+      background: rgba(0,0,0,0.55);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 20px;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 { font-size: 2.2rem; margin-bottom: 15px; }
+    p { font-size: 1.15rem; line-height: 1.75; }
+
+    .submit-btn {
+      display: inline-block;
+      background: rgba(255,255,255,0.85);
+      color: black;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+    .submit-btn:hover {
+      background: white;
+    }
+
+    .nav-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    a.nav {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.25);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.nav:hover { background: rgba(255,255,255,0.45); }
+
+
+    /* Smooth fade-in effect */
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="content-box">
+    <h1>Chapter 2 — The Hidden Letter</h1>
+
+    <p>
+      Later that night, under the soft glow of candlelight, the princess unrolled
+      the scroll once more. Between its folds, she discovered a second message —
+      hidden… intentional… meant only for her eyes.
+      <br><br>
+      The handwriting was nervous yet sincere:
+      <br>
+      <i>“I protect you not out of duty… but out of devotion.”</i>
+      <br><br>
+      Her heart felt something unfamiliar — warmth, curiosity, and a flutter
+      she never expected from a soldier’s vows.
+    </p>
+
+    <!-- Submit Reaction Button -->
+    <a class="submit-btn" target="_blank"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeiAozgXVs3CL77bAV_Qyp1oQzJ-wL8gO4Cy0wSqnjiokMuSg/viewform?entry.1156155790=Page2">
+      Submit Your Reaction ✨
+    </a>
+
+    <div class="nav-buttons">
+      <a href="page1.html" class="nav">← Back</a>
+      <a href="page3.html" class="nav">Next →</a>
+    </div>
+
+  </div>
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>

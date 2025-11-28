@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 — The Queen Who Rose</title>
+
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/queen_throne.png') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.85);
+    }
+
+    .content-box {
+      background: rgba(0,0,0,0.55);
+      padding: 30px 45px;
+      margin: 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 { font-size: 2.3rem; margin-bottom: 15px; }
+    p  { font-size: 1.15rem; line-height: 1.8; }
+
+    .submit-btn {
+      display: inline-block;
+      background: rgba(255,255,255,0.85);
+      color: black;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+    .submit-btn:hover { background: white; }
+
+    .nav-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.25);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .nav:hover { background: rgba(255,255,255,0.45); }
+
+
+
+    /* Smooth fade-in effect */
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="content-box">
+    <h1>Chapter 5 — The Queen Who Rose</h1>
+
+    <p>
+      The princess grew into a queen not by chance, but by strength.  
+      Challenges sharpened her.  
+      Choices shaped her.  
+      Courage crowned her long before the kingdom did.
+      <br><br>
+      And though the throne was heavy, she sat upon it with a grace the world admired.
+      <br><br>
+      In the quiet shadows behind her, the soldier watched — calm, steady, proud.
+      <br><br>
+      She did not need him to lead.
+      <br>
+      She only needed him to believe.
+    </p>
+
+    <!-- Submit Reaction Button -->
+    <a class="submit-btn" target="_blank"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSeiAozgXVs3CL77bAV_Qyp1oQzJ-wL8gO4Cy0wSqnjiokMuSg/viewform?entry.1156155790=Page5">
+       Submit Your Reaction ✨
+    </a>
+
+    <div class="nav-buttons">
+      <a href="page4.html" class="nav">← Back</a>
+      <a href="page6.html" class="nav">Next →</a>
+    </div>
+
+  </div>
+<script>
+  window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>
